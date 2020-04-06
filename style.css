@@ -1,5 +1,5 @@
 * {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding:0;
@@ -12,17 +12,54 @@ body {
 nav {
   position: fixed;
   /* top: 10px; */
+  display: flex;
+  justify-content: space-between;
   left: 0;
   right: 0;
   padding: 30px;
   border: 1px solid black;
   z-index: 1;
-  background-color: rgb(228, 228, 228)
+  background-color: rgb(228, 228, 228);
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .navbar {
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 100%;
+    left: 88%;
+    /* width: 12%; */
+    /* margin-right: 12%;
+    margin-right: -250px; */
+  }
+
+  header {
+    position: relative;
+    top: auto;
+  }
+
+  .bio {
+    margin-top: auto;
+  }
+
+  .social-links {
+    flex-direction: column;
+    line-height: 40px;
+  }
 }
 
 header {
   position: relative;
-  top: 21px;
+  top: 40px;
   padding:80px;
   font-size: 30px;
   border: 1px solid black;
@@ -30,34 +67,126 @@ header {
 }
 
 section {
+  /* position: relative; */
   padding: 60px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-.project {
-  border: 1px solid black;
-  height: 160px;
-  width: 95%;
+.face {
+  height:90%;
+  width: 100%;
+  /* height: 70%;
+  width: 95%; */
   display: flex;
   align-self: center;
 }
 
+.headshot {
+  position: relative;
+  top: 40px;
+}
+
+.project {
+  border: 1px solid black;
+  height:90%;
+  width: 100%;
+  /* height: 70%;
+  width: 95%; */
+  display: flex;
+  align-self: center;
+}
+
+h1 {
+  height: 50px;
+}
+
+h3 {
+  height: 50px;
+}
+
+.project-title {
+  height: 50px;
+}
+
+.project-info{
+  text-align: left;
+  position: relative;
+  top: 30px;
+}
+
+.project-info-p{
+  line-height: 20px;
+}
+
+
+img {
+  object-fit: cover;
+  max-width:100%;
+  max-height:100%;  
+}
+
 .color {
-  background-color: rgb(78, 78, 78)
+  /* height: 100%; */
+  /* height: 1080px; */
+
+  /* height: auto; */
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  align-content: space-evenly;
+  flex-direction: column;
+}
+
+.welcome {
+  margin-bottom: 110px;
+}
+
+.bio {
+  margin-top: 90px;
+}
+
+.color-h1 {
+  line-height: 40px;
+  
+}
+
+.color-p {
+  position: relative;
+  /* top: 270px; */
+  margin-top: 40px;
+  line-height: 27px;
+  /* margin-bottom: 350px; */
 }
 
 .colour {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(194, 194, 194)
 } 
 
+.culor {
+  border: 1px solid black;
+  background-color: rgb(78, 78, 78)
+}
+
+.social-links{
+  position: relative;
+  /* top: 30px; */
+  display: flex;
+  justify-content: space-around;
+}
+
 p {
   align-self: center;
 }
 
 footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
   border: 1px solid black;
   background-color: rgb(109, 109, 109)
 }

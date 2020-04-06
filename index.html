@@ -5,25 +5,81 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav role="navigation">Nav bar</nav>
-    <header><b>Riley Powers</b></header>
+    <div class="navbar">
+      <nav role="navigation">
+        <!-- <ul> -->
+          <!-- <li> -->
+            <a href="#titlelink">Bio</a>
+          <!-- </li> -->
+          <!-- <li> -->
+            <a href="#projectlink">Projects</a>
+          <!-- </li> -->
+          <!-- <li> -->
+            <a href="#linklink">Social Links</a>
+          <!-- </li> -->
+          <!-- <li> -->
+            <a href="#footerlink">Contact</a>
+          <!-- </li> -->
+        <!-- </ul> -->
+      </nav>
+    </div>
+    <header><b>Riley Powers</b>
+      <div class="face">
+        <img class="headshot" src="https://static01.nyt.com/images/2020/03/31/arts/television/31xp-tigerking/31xp-tigerking-mobileMasterAt3x.jpg" >
+      </div>
+    </header>
     <section class="color">
-      <h1>About me</h1>
-      <h3>This section will contain my bio.</h2>
-    </section>
-    <section class="colour">
-      <h1>Projects</h1>
-      <h3>This will contain my portfolio and project I've done.</h3>
-      <div class="project">
+      <div class="welcome">
+        <h1 class="color-h1"><a name="titlelink">Welcome to my portfolio. I am a fullstack developer specializing in jQuery and React.</a></h1>
+      </div>
+      <div class="bio">
+        <p class="color-p">I am a current student of the Front End Web Development Career Path bootcamp at Thinkful. Coding is extremely gratifying for me as I love making my ideas come to life. Coding give me a means to solve most of the problems I have. I enjoy discovering new APIs, creating new and design-friendly webpages, and leaving clients satisfied with responsive and clean results. 
+
+        Outside of web development, I enjoy getting outdoors to surf, hike, and bike. Cooking is the first of my ever-growing list of passions. I am always on the lookout for the next thing to learn. 
+        </p>
       </div>
     </section>
-    <section class="color">
-      <h1>Links</h1>
-      <h3>This will contain links to my social media & Github.</h3>
+    <section class="colour">
+      <h1 class="project-title"><a name="projectlink">Projects</a></h1>
+      <h3>Pro Chef Quiz</h3>
+      <div class="project">
+        <a href="https://rileypowers.github.io/are-you-a-chef/">
+          <img id="quizImg" src='https://lh3.googleusercontent.com/OIaSBu3qxHCB7t6YxdzVLwEUKU9sUqZ1Jvxg9euX_vB1VYKAShy7JfA4NH-6iXr9jhN19qQMy3KIzXLKgTwbLI8oP2sULtDpaR2We3M69c9xeytRcg7RVjr3dsfEERZbXvr2MWjvsQ=w2400'/>
+        </a>
+      </div>
+      <div class="project-info">
+        <p class="project-info-p">
+          This is question one on a quiz application I designed. It begins with a splash page with a title and description, then takes the user through 5 questions which then ends in the results page. I utilized HTML, CSS, Javascript, & jQuery.
+        </p>
+        <br>
+        <p>
+          Click the image to see the live page. Click <a href="https://github.com/rileypowers/are-you-a-chef">here</a> to see it on Github.
+        </p>
+        <!-- <ul>Links
+          <li><a href="https://rileypowers.github.io/are-you-a-chef/">Live page</a></li>
+          <li><a href="https://github.com/rileypowers/are-you-a-chef">Github</a></li>
+        </ul> -->
+      </div>
     </section>
-    <footer>Footer</footer>
+    <section class="culor">
+      <h1><a name="linklink">Social Links</a></h1>
+      <div class="social-links">
+      <a href="https://www.linkedin.com/in/riley-p-613ba21a2/">LinkedIn</a>
+      <a href="https://github.com/rileypowers/">Github</a>
+      </div>
+    </section>
+    <footer>
+      <a name="footerlink"></a>
+      <p>Contact me at my email: <a href="mailto:wzrd1111@gmail.com">wzrd1111@gmail.com</a></p>
+      <p></p>
+    </footer>
     <script src="code.js"></script>
+
   </body>
 </html>
