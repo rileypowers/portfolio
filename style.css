@@ -26,6 +26,10 @@ nav {
 
 @media screen and (min-width: 768px) {
 
+  body {
+    padding-right: 99px;
+  }
+
   .navbar {
     display:flex;
     justify-content: flex-end;
@@ -48,7 +52,7 @@ nav {
   }
 
   .bio {
-    margin-top: auto;
+    display: unset !important;
   }
 
   .social-links {
