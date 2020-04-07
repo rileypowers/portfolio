@@ -27,20 +27,22 @@ nav {
 @media screen and (min-width: 768px) {
 
   body {
-    padding-right: 99px;
+    padding-right: 11.5%;
   }
 
   .navbar {
     display:flex;
     justify-content: flex-end;
+    align-self: center;
   }
 
   nav {
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
     height: 100%;
     left: 88%;
+    z-index: 15;
     /* width: 12%; */
     /* margin-right: 12%;
     margin-right: -250px; */
@@ -48,11 +50,12 @@ nav {
 
   header {
     position: relative;
-    top: auto;
+    top: 0px;
   }
 
   .bio {
-    display: unset !important;
+    /* display: unset !important; */
+    margin-top: 0%;
   }
 
   .social-links {
@@ -75,6 +78,30 @@ section {
   padding: 60px;
   /* border: 1px solid black; */
 }
+
+.divider {
+  max-height: 8px;
+  /* position: absolute; */
+  margin-top: 5%;
+  z-index: 10;
+}
+
+  .divider2 {
+  max-height: 45px;
+  margin-top: 5%;
+  z-index: 10;
+}
+
+/* header.divider-line {
+  position: relative;
+  margin-top: 90%;
+  padding: 40px;
+} */
+
+/* .divider-line {
+  display: flex;
+  align-self: center;
+} */
 
 .face {
   height:90%;
@@ -147,7 +174,7 @@ img {
 }
 
 .bio {
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .color-h1 {
