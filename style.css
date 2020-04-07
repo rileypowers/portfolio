@@ -1,5 +1,6 @@
 * {
-  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Asap', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding:0;
@@ -79,16 +80,36 @@ section {
   /* border: 1px solid black; */
 }
 
+screen and (min-width: 444px) {
+  .divider {
+    margin-top: 5%
+  }
+
+  .divider2 {
+    margin-top: 5%;
+  }
+
+  .divider3 {
+    margin-top: 2%;
+  }
+}
+
 .divider {
   max-height: 8px;
   /* position: absolute; */
-  margin-top: 5%;
+  margin-top: 40%;
   z-index: 10;
 }
 
   .divider2 {
   max-height: 45px;
-  margin-top: 5%;
+  margin-top: 40%;
+  z-index: 10;
+}
+
+.divider3 {
+  max-height: 45px;
+  margin-top: 20%;
   z-index: 10;
 }
 
@@ -121,10 +142,17 @@ section {
   border: 1px solid black;
   height:90%;
   width: 100%;
+  /* width: auto; */
   /* height: 70%;
   width: 95%; */
   display: flex;
   align-self: center;
+}
+
+@media screen and (min-width: 844px) {
+  .project {
+    width: auto;
+  }
 }
 
 h1 {
